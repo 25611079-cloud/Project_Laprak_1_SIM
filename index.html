@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Tiket Konser Kampus</title>
+</head>
+<body>
+
+    <h1 align="center">Reservasi Tiket Konser Musik Kampus</h1>
+
+    <table border="0" cellpadding="20" align="center">
+        <tr>
+            <!-- Sisi kiri: banner poster -->
+            <td valign="top">
+                <img src="FOTO_KONSER.png"
+                     alt="Poster Konser Musik Kampus"
+                     width="350">
+            </td>
+
+            <!-- Sisi kanan: formulir -->
+            <td valign="top">
+                <form action="#" method="post">
+
+                    <p>
+                        <label for="username">Username</label><br>
+                        <input type="text" id="username"
+                               name="username" required>
+                    </p>
+
+                    <p>
+                        <label for="nama">Nama Lengkap</label><br>
+                        <input type="text" id="nama"
+                               name="nama" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email"
+                               name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="identitas">
+                            Nomor Identitas (NIM/KTP)
+                        </label><br>
+                        <input type="text" id="identitas"
+                               name="identitas" required>
+                    </p>
+
+                    <p>
+                        <label for="kategori">Kategori Tiket</label><br>
+                        <select id="kategori" name="kategori" required>
+                            <option value="">-- Pilih kategori --</option>
+                            <option value="Festival">Festival</option>
+                            <option value="Tribun">Tribun</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="bayar">Metode Pembayaran</label><br>
+                        <select id="bayar" name="bayar" required>
+                            <option value="">-- Pilih metode --</option>
+                            <option value="Transfer Bank">
+                                Transfer Bank
+                            </option>
+                            <option value="QRIS">QRIS</option>
+                            <option value="E-Wallet">E-Wallet</option>
+                            <option value="Bayar di Tempat">
+                                Bayar di Tempat
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <button type="submit">Pesan Tiket</button>
+                    </p>
+
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
